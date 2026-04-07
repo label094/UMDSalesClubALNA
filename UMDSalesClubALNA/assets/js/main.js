@@ -64,19 +64,14 @@
 				});
 
 	// Header.
-		if (!browser.mobile
-		&&	$header.hasClass('alt')
-		&&	$banner.length > 0) {
+		if ($header.hasClass('alt') && $banner.length > 0) {
 
-			$window.on('load', function() {
-
-				$banner.scrollex({
-					bottom:		$header.outerHeight() + 250,
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); }
-				});
-
+			$window.on('scroll load', function() {
+				if ($window.scrollTop() > $header.outerHeight()) {
+					$header.removeClass('alt');
+				} else {
+					$header.addClass('alt');
+				}
 			});
 
 		}
@@ -102,7 +97,7 @@
 				}
 
 				function startTimer() {
-					timer = setInterval(nextSlide, 8000);
+					timer = setInterval(nextSlide, 6000);
 				}
 
 				$dots.on('click', function() {
