@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Meetings and Events - UMD Sales Club</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		.calendar-container {
+			position: relative;
+			padding-bottom: 75%;
+			/* 4:3 Aspect Ratio */
+			height: 0;
+			overflow: hidden;
+			border-radius: 6px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.calendar-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+			.calendar-container {
+				padding-bottom: 100%;
+				/* More square aspect ratio on mobile */
+			}
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">UMD</a> Sales Club</h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current-page">
+						<a href="#" class="icon solid fa-angle-down">About</a>
+						<ul>
+							<li class="current-subpage"><a href="events.html">Meetings & Events</a></li>
+							<li><a href="summit.html">UMD Sales Summit</a></li>
+							<li><a href="alumni.html">Alumni Stories</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="https://duluthumn.campusgroups.com/Sales/club_signup" class="button">Join</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header>
+				<h2>Meetings and Events</h2>
+				<p>Stay up to date with the UMD Sales Club.</p>
+			</header>
+			<div class="box">
+				<div class="calendar-container">
+					<!-- Replace the src with the actual Google Calendar embed URL if necessary -->
+					<iframe
+						src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York"
+						style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
+		</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><img src="images/logo.jpg" alt="UMD Sales Club Logo"></li>
+		</ul>
+		<ul class="copyright">
+			<li>&copy; UMD Sales Club. All rights reserved.</li>
+			<li>Design Idea: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
